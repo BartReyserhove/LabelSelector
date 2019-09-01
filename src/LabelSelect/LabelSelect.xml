@@ -100,6 +100,10 @@
             <caption>Autocomplete Match Anywhere</caption>
             <category>Behavior</category>
             <description>Autcomplete matches anywhere instead of just at the start.</description>
+        <property key="allowSpaces" type="boolean" defaultValue='false'>
+            <caption>Allow Spaces</caption>
+            <category>Behavior</category>
+            <description>Allow spaces when searching for tags.</description>
         </property>
     </properties>
 </widget>
