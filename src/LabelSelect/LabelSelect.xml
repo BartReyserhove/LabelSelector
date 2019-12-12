@@ -96,10 +96,11 @@
             <description></description>
             <returnType type="Void"/>
         </property>
-         <property key="autocompleteMatchAnywhere" type="boolean" defaultValue='false'>
+        <property key="autocompleteMatchAnywhere" type="boolean" defaultValue='false'>
             <caption>Autocomplete Match Anywhere</caption>
             <category>Behavior</category>
             <description>Autcomplete matches anywhere instead of just at the start.</description>
+        </property>
         <property key="allowSpaces" type="boolean" defaultValue='false'>
             <caption>Allow Spaces</caption>
             <category>Behavior</category>
