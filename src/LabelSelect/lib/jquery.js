@@ -11308,10 +11308,10 @@ return isNaN(t)?d:t},g=p(l[0]),m=Math.max(g,p(l[1]||"")),g=a?Math.max(g,a.getFul
 
             if (!this.options.autocomplete.source) {
                 this.options.autocomplete.source = function(search, showChoices) {
-                    var filter = search.term.toLowerCase();
+					var filter = search.term.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");					
                     var choices = $.grep(this.options.availableTags, function(element) {
                         if (that.options.autocompleteMatchAnywhere) {
-                            return (element.toLowerCase().search(filter) !== -1);
+                            return (element.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").search(filter) !== -1);
                         } else {
                             return (element.toLowerCase().indexOf(filter) === 0);
                         }
